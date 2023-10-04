@@ -1,0 +1,47 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* .header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+
+} */
+
+h1, img {
+  margin-top: 100px;
+}
+
+.overlap{
+  width: 300px;
+  top:0;
+  right: 0;
+  bottom: 500px;
+}
+
+
+.text{
+  display: flex;
+  max-width: 1074px;
+  height: 600px;
+  text-align: center;
+}
