@@ -1,0 +1,95 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.page_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.063rem;
+  margin-top: 3.688rem;
+}
+
+.page_title h2{
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.page_title p{
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media(max-width: 1000px){
+  .paragraph{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px){
+  .container{
+    background-image: url("/assets/images/educationalServicesImages/wallpaper_mobile.jpeg");
+    background-size: 100%;
+  }
+
+  .page_title h2{
+    max-width: 70%;
+  }
+
+
+  .section_upper{
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .section_upper .image_container{
+    background-image: none;
+  }
+
+  .image_container{
+    display: none;
+  }
+
+  .section_upper > div > p{
+    width: fit-content;
+    height: auto;
+  }
+
+  .section_bottom{
+    padding: 0;
+  }
+
+  .section_bottom .image_container{
+    display: none;
+  }
+
+  .paragraph{
+    max-width: 70%;
+    font-size: 1.125rem;
+  }
+
+  .key_features{
+    align-items: center;
+  }
+
+  .key_features .title{
+    width: 50%;
+    border-bottom: none;
+  }
+  .paragraph_feat{
+    max-width: 60%;
+    height: fit-content;
+    font-size: 18px;
+  }
+
+  img{
+    display: none;
+  }
+}
