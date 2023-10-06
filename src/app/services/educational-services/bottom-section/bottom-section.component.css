@@ -45,11 +45,6 @@ img{
 }
 
 @media (max-width: 768px){
-  .container{
-    background-image: url("/assets/images/wallpaper_mobile.jpeg");
-    background-size: 100%;
-  }
-
   .page_title h2{
     max-width: 70%;
   }
