@@ -1,10 +1,86 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+
+
+interface carouselImage{
+  imageSrc: string;
+  imageAlt: string;
+}
+
+
 
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css']
 })
-export class BlogComponent {
+export class BlogComponent implements OnInit, OnDestroy {
+
+
+
+  @Input() images: carouselImage[] = [
+    {imageSrc: '/assets/imagesBlog/backendCard.htm', imageAlt: 'img1'},
+    {imageSrc: '/assets/imagesBlog/img2.svg', imageAlt: 'img2'},
+    {imageSrc: '/assets/imagesBlog/computer.svg', imageAlt: 'img4'},
+
+    {imageSrc: '/assets/imagesBlog/img3.svg', imageAlt: 'img3'},]
+
+  @Input() indicators = true;
+  @Input() controls = true;
+  @Input() autoSlide = true;
+  @Input() slideInterval = 5000; //default to 3 seconds
+
+  selectedIndex = 0;
+  private intervalId: any;
+
+  ngOnInit(): void{
+    if(this.autoSlide){
+      this.autoSlideImages();
+    }
+  }
+
+  //changes slide in every 3 seconds
+  // autoSlideImages(): void{
+  //   setInterval(() => {
+  //     this.onNextClick();
+  //   }, this.slideInterval);
+  // }
+  autoSlideImages(): void {
+    if (this.autoSlide) {
+      this.intervalId = setInterval(() => {
+        this.onNextClick();
+      }, this.slideInterval);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+
+
+   //sets index of image on dot/indicator click
+   selectImage(index: number): void {
+    this.selectedIndex = index;
+  }
+
+
+
+
+  onPrevClick(): void{
+    if(this.selectedIndex === 0) {
+      this.selectedIndex = this.images.length - 1;
+    }else{
+      this.selectedIndex--;
+    }
+  }
+
+  onNextClick(): void{
+    if(this.selectedIndex === this.images.length - 1) {
+      this.selectedIndex = 0;
+    }else{
+      this.selectedIndex++;
+    }
+  }
 
 }

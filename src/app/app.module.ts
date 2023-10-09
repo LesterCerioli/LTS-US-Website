@@ -10,6 +10,8 @@ import { BlogComponent } from './blog/blog.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +20,15 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     BlogComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    CarouselModule.forRoot(),
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
