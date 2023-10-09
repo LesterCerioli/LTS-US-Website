@@ -18,11 +18,10 @@ export class BlogComponent implements OnInit, OnDestroy {
 
 
   @Input() images: carouselImage[] = [
-    {imageSrc: '/assets/imagesBlog/backendCard.htm', imageAlt: 'img1'},
-    {imageSrc: '/assets/imagesBlog/img2.svg', imageAlt: 'img2'},
-    {imageSrc: '/assets/imagesBlog/computer.svg', imageAlt: 'img4'},
-
-    {imageSrc: '/assets/imagesBlog/img3.svg', imageAlt: 'img3'},]
+    {imageSrc: '/assets/imagesBlog/backendCard.png', imageAlt: 'img1'},
+    {imageSrc: '/assets/imagesBlog/cloudSuiteCard.png', imageAlt: 'img2'},
+    {imageSrc: '/assets/imagesBlog/devOpsCard.png', imageAlt: 'img3'},
+    {imageSrc: '/assets/imagesBlog/frontEndCard.png', imageAlt: 'img4'},]
 
   @Input() indicators = true;
   @Input() controls = true;
@@ -38,12 +37,7 @@ export class BlogComponent implements OnInit, OnDestroy {
     }
   }
 
-  //changes slide in every 3 seconds
-  // autoSlideImages(): void{
-  //   setInterval(() => {
-  //     this.onNextClick();
-  //   }, this.slideInterval);
-  // }
+  
   autoSlideImages(): void {
     if (this.autoSlide) {
       this.intervalId = setInterval(() => {

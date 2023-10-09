@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { PostsComponent } from './blog/posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     BlogComponent,
     HeaderComponent,
     FooterComponent,
+    PostsComponent,
   ],
   imports: [
     BrowserModule,
