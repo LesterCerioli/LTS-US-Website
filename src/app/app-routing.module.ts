@@ -1,7 +1,6 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavBarComponent } from './../components/nav-bar/nav-bar.component';
 import { HomeComponent } from 'src/components/home/home.component';
 import { ServicesComponent } from 'src/components/services/services.component';
 import { PortifolioComponent } from 'src/components/portifolio/portifolio.component';
@@ -32,7 +31,7 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-    path: 'aboult-us',
+    path: 'about-us',
     component: AboultUsComponent
   },
   {
