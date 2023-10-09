@@ -62,8 +62,9 @@
     font-weight: 600;
     line-height: 36px;
     letter-spacing: 0.6px;
-    text-decoration: underline;
-    text-decoration-color: #382EC4;;
+    width: 100%;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #382EC4;
 }
 
 .subtitle_container{
@@ -139,6 +140,7 @@
         font-weight: 600;
         line-height: 22px;
         letter-spacing: 0.6px;
+        
     }
     
     .subtitle {
@@ -167,7 +169,9 @@
     }
 
     .title {
-
+        width: 100%;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid #382EC4;
     }
 
     .subtitle{
