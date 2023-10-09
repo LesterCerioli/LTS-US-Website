@@ -5,7 +5,7 @@ import { HomeComponent } from 'src/components/home/home.component';
 import { ServicesComponent } from 'src/components/services/services.component';
 import { PortifolioComponent } from 'src/components/portifolio/portifolio.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
-import { AboultUsComponent } from 'src/components/aboult-us/aboult-us.component';
+import { AboutUsComponent } from 'src/components/aboult-us/about-us.component';
 import { BlogComponent } from 'src/components/blog/blog.component';
 
 const routes: Routes = [
@@ -32,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: 'about-us',
-    component: AboultUsComponent
+    component: AboutUsComponent
   },
   {
     path: 'blog',
