@@ -4,44 +4,50 @@ import { HomeComponent } from 'src/components/home/home.component';
 import { ServicesComponent } from 'src/components/services/services.component';
 import { PortifolioComponent } from 'src/components/portifolio/portifolio.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
-import { AboutUsComponent } from 'src/components/aboult-us/about-us.component';
+import { AboutUsComponent } from 'src/components/about-us/about-us.component';
 import { BlogComponent } from 'src/components/blog/blog.component';
+import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'services',
-    component: ServicesComponent
+    component: ServicesComponent,
   },
   {
+    path: 'services/educational-services',
+    component: EducationalServicesComponent,
+  },
+
+  {
     path: 'portifolio',
-    component: PortifolioComponent
+    component: PortifolioComponent,
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
   },
   {
     path: 'about-us',
-    component: AboutUsComponent
+    component: AboutUsComponent,
   },
   {
     path: 'blog',
-    component: BlogComponent
-  }
+    component: BlogComponent,
+  },
 ];
 
 @NgModule({
-  declarations: [], 
+  declarations: [],
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
