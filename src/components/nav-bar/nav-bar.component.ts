@@ -7,7 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavbarComponent {
   isMenuOpen: boolean = false;
-  isMenuVisible: boolean = window.innerWidth < 768;
+  isMenuVisible: boolean = window.innerWidth < 769;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -15,9 +15,9 @@ export class NavbarComponent {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    this.isMenuVisible = event.target.innerWidth < 768;
+    this.isMenuVisible = event.target.innerWidth < 769;
     if (!this.isMenuVisible) {
-      this.isMenuOpen = false; // Fechar o menu em telas maiores que 768px
+      this.isMenuOpen = false;
     }
   }
 }
