@@ -1,38 +1,42 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ServicesComponent } from './services/services.component';
-import { ContactComponent } from './contact/contact.component';
-import { BlogComponent } from './blog/blog.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from 'src/components/home/home.component';
+import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
+import { AboutUsComponent } from '../components/about-us/about-us.component';
+import { BlogComponent } from 'src/components/blog/blog.component';
+import { ContactComponent } from 'src/components/contact/contact.component';
+import { FooterComponent } from 'src/components/footer/footer.component';
+import { HeaderComponent } from 'src/components/header/header.component';
+import { PortifolioComponent } from 'src/components/portifolio/portifolio.component';
+import { ServicesComponent } from 'src/components/services/services.component';
+import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
+import { BottomSectionComponent } from 'src/components/services/educational-services/bottom-section/bottom-section.component';
+import { UpperSectionComponent } from 'src/components/services/educational-services/upper-section/upper-section.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { PostsComponent } from './blog/posts/posts.component';
+import { PostsComponent } from '../components/blog/posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavBarComponent,
+    AboutUsComponent,
     HomeComponent,
-    ServicesComponent,
-    ContactComponent,
     BlogComponent,
-    HeaderComponent,
+    ContactComponent,
     FooterComponent,
-    PostsComponent,
+    HeaderComponent,
+    PortifolioComponent,
+    ServicesComponent,
+    EducationalServicesComponent,
+    BottomSectionComponent,
+    UpperSectionComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
+  imports: [BrowserModule, AppRoutingModule],
 
-    CarouselModule.forRoot(),
-
-
-  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

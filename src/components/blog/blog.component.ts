@@ -13,9 +13,9 @@ interface carouselImage{
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css']
 })
+
+
 export class BlogComponent implements OnInit, OnDestroy {
-
-
 
   @Input() images: carouselImage[] = [
     {imageSrc: '/assets/imagesBlog/backendCard.png', imageAlt: 'img1'},
@@ -37,7 +37,7 @@ export class BlogComponent implements OnInit, OnDestroy {
     }
   }
 
-  
+
   autoSlideImages(): void {
     if (this.autoSlide) {
       this.intervalId = setInterval(() => {

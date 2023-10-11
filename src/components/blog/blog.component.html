@@ -3,7 +3,9 @@
     <section>
       <div class="container">
         <div>
-          <h1>Welcome!!</h1>
+          <h1
+          class="title">Welcome!!
+          </h1>
         </div>
 
         <span class="image"
@@ -20,10 +22,10 @@
           </p>
         </div>
         <div>
-          <h2>Confira nossos artigos!</h2>
+          <h2>Check out our articles!</h2>
         </div>
         <div>
-          <h3>Ver artigos</h3>
+          <a routerLink="/blog/posts" class="article">See articles</a>
         </div>
 
         <div
@@ -31,13 +33,15 @@
             *ngIf="images && images.length > 0"
             class="carousel-container"
           >
-          <img
-            
+          <img routerLink="/blog/posts"
+
             *ngFor="let image of images; let i = index"
             [src]="image.imageSrc"
             [alt]="image.imageAlt"
             [ngClass]="{ 'image-active': selectedIndex === i }"
             class="fade"
+            loading="lazy"
+
           />
 
           <div *ngIf="indicators" class="carousel-dot-container">
