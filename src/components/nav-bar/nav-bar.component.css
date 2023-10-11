@@ -5,7 +5,10 @@
   width: 100%;
   padding: 0 80px;
   background: #382EC4;
+  z-index: 1000;
+  position: fixed;
 }
+
 
 .hamburger-menu {
   display: none;
@@ -16,7 +19,7 @@
   width: 30px;
   height: 3px;
   background-color: #FFF;
-  margin: 3px 0;
+  margin: 5px 0;
 }
 
 .major-links-container {
