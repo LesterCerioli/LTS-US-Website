@@ -1,60 +1,116 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 80px;
+  background: #382EC4;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 3px 0;
+}
+
+.major-links-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  @media (min-width: 1001px) and (max-width: 1450px) {
+    width: 70%;
+  }
+  @media (max-width: 1000px) {
+    width: 0%;
+  }
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 768px) {
     display: flex;
+    flex-direction: column;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
+    top: 0px;
+    padding-top: 20px;
+    right: 0;
     width: 100%;
-    padding: 10px 80px;
+    height: 500px;
     background: #382EC4;
-  }
-  
-  .hamburger-menu {
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #FFF;
-    margin: 3px 0;
-  }
-  
-  .major-links-container {
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
+    z-index: 1000;
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
   }
-  
-  .links-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row; /* Manter os links em linha por padrão */
+}
+
+a {
+  color: #FFF;
+  font-size: 18px;
+  text-decoration: none;
+
+  &:hover::after {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid white;
+}
+  &::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .9s;
   }
-  
-  a {
-    color: #FFF;
-    font-size: 18px;
-    text-decoration: none;
-    margin-right: 20px;
+
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 20px;
+}
+
+@media (min-width: 759px) and (max-width: 1250px){
+  .navbar {
+    padding: 0 50px;
   }
-  
-  .close-button {
-    background-color: transparent;
-    border: none;
-    color: #FFF;
-    font-size: 20px;
-    cursor: pointer;
+  .major-links-container {
+    width: 70%;
   }
-  
-  .close-icon {
-    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
   }
-  
+
+  .major-links-container {
+    display: none;
+  }
+
   .show-links {
-    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
   }
-  
-  .hide-links {
-    transform: translateX(100%);
-  }
-  
+}
