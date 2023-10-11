@@ -2,10 +2,3 @@
     display: flex;
     flex-direction: column;
 }
-
-@media (max-width: 962px) {
-    .container{
-    background: url(/assets/foodServicesImages/food_services_background.svg) no-repeat;
-    background-size: cover;
-}
-}
