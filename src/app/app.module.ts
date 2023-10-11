@@ -14,6 +14,9 @@ import { ServicesComponent } from 'src/components/services/services.component';
 import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
 import { BottomSectionComponent } from 'src/components/services/educational-services/bottom-section/bottom-section.component';
 import { UpperSectionComponent } from 'src/components/services/educational-services/upper-section/upper-section.component';
+import { TravelServicesComponent } from 'src/components/services/travel-services/travel-services.component';
+import { UpperSectionTravelComponent } from 'src/components/services/travel-services/upper-section-travel/upper-section-travel.component';
+import { BottomSectionTravelComponent } from 'src/components/services/travel-services/bottom-section-travel/bottom-section-travel.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { UpperSectionComponent } from 'src/components/services/educational-servi
     EducationalServicesComponent,
     BottomSectionComponent,
     UpperSectionComponent,
+    TravelServicesComponent,
+    UpperSectionTravelComponent,
+    BottomSectionTravelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
 
