@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <div class="hamburger-menu" (click)="toggleMenu()" *ngIf="isMenuVisible">
+      <div class="bar" [ngClass]="{ 'open': isMenuOpen }"></div>
+      <div class="bar" [ngClass]="{ 'open': isMenuOpen }"></div>
+      <div class="bar" [ngClass]="{ 'open': isMenuOpen }"></div>
+    </div>
+    <div>
+      <img src="/assets/imagesNavbar/LTS_navbar_logo.png" alt="Lucas Tecnologia Services Logo" width="76" height="43">
+    </div>
+    <div class="major-links-container" [ngClass]="{ 'show-links': isMenuOpen, 'hide-links': !isMenuOpen && isMenuVisible }">
+      <a routerLink="/">Home</a>
+      <a routerLink="/services">Servicess</a>
+      <a routerLink="/portfolio">Portfolio</a>
+      <a routerLink="/contact">Contact</a>
+      <a routerLink="/aboutUs">About us</a>
+      <a routerLink="/blog">Blog</a>
+      <button *ngIf="isMenuOpen" class="close-button" (click)="toggleMenu()">
+        <i class="close-icon">X</i>
+      </button>
+    </div>
+  </nav>
+  

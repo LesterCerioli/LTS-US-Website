@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from 'src/components/home/home.component';
-import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
+import { NavbarComponent } from 'src/components/nav-bar/nav-bar.component';
 import { AboutUsComponent } from '../components/about-us/about-us.component';
 import { BlogComponent } from 'src/components/blog/blog.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
@@ -18,7 +18,7 @@ import { UpperSectionComponent } from 'src/components/services/educational-servi
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
+    NavbarComponent,
     AboutUsComponent,
     HomeComponent,
     BlogComponent,
