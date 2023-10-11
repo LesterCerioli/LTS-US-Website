@@ -7,6 +7,7 @@ import { ContactComponent } from 'src/components/contact/contact.component';
 import { AboutUsComponent } from 'src/components/about-us/about-us.component';
 import { BlogComponent } from 'src/components/blog/blog.component';
 import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
+import { TravelServicesComponent } from 'src/components/services/travel-services/travel-services.component';
 import { FoodServicesComponent } from 'src/components/services/food-services/food-services.component';
 
 const routes: Routes = [
@@ -27,7 +28,12 @@ const routes: Routes = [
     path: 'services/educational-services',
     component: EducationalServicesComponent,
   },
-  { path: 'services/food-services',
+  {
+    path: 'services/travel-services',
+    component: TravelServicesComponent,
+  },
+  {
+    path: 'services/food-services',
     component: FoodServicesComponent,
   },
   {
