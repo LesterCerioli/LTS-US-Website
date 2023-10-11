@@ -163,9 +163,10 @@
 }
 
 @media (max-width: 962px) {
-    
-    .image_container {
-        display: none;
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .texts_container { 
