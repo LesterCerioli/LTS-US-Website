@@ -7,7 +7,7 @@ import { ContactComponent } from 'src/components/contact/contact.component';
 import { AboutUsComponent } from 'src/components/about-us/about-us.component';
 import { BlogComponent } from 'src/components/blog/blog.component';
 import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
-import { PostsComponent } from 'src/components/blog/posts/posts.component';
+// import { PostsComponent } from 'src/components/blog/posts/posts.component';
 
 const routes: Routes = [
   {
@@ -44,11 +44,11 @@ const routes: Routes = [
     path: 'blog',
     component: BlogComponent,
   },
-  {
-    path: 'blog/posts',
-    component: PostsComponent,
-  }
-  
+  // {
+  //   path: 'blog/posts',
+  //   component: PostsComponent,
+  // }
+
 ];
 
 @NgModule({
