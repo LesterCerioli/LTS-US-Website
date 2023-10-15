@@ -59,8 +59,6 @@ export class BlogComponent implements OnInit, OnDestroy {
   }
 
 
-
-
   onPrevClick(): void{
     if(this.selectedIndex === 0) {
       this.selectedIndex = this.images.length - 1;
