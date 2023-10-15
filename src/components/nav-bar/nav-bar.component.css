@@ -23,17 +23,16 @@
 }
 
 .major-links-container {
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
 
   @media (max-width: 769px) {
     display: flex;
     flex-direction: column;
     position: fixed;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     top: 0px;
     padding-top: 20px;
@@ -86,7 +85,7 @@ a {
     padding: 0 50px;
   }
   .major-links-container {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -103,5 +102,11 @@ a {
     display: flex;
     flex-direction: column;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 0 40px;
   }
 }
