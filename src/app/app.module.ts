@@ -21,6 +21,9 @@ import { FoodServicesComponent } from 'src/components/services/food-services/foo
 import { TitleComponent } from 'src/components/services/food-services/title/title.component';
 import { SecondSectionComponent } from 'src/components/services/food-services/second-section/second-section.component';
 import { ThirdSectionComponent } from 'src/components/services/food-services/third-section/third-section.component';
+import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
+import { MobileDevelopmentUpperSectionComponent } from 'src/components/services/mobile-development/mobile-development-upper-section/mobile-development-upper-section.component';
+import { MobileDevelopmentBottomSectionComponent } from 'src/components/services/mobile-development/mobile-development-bottom-section/mobile-development-bottom-section.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { ThirdSectionComponent } from 'src/components/services/food-services/thi
     FoodServicesComponent,
     TitleComponent,
     SecondSectionComponent,
-    ThirdSectionComponent
+    ThirdSectionComponent,
+    MobileDevelopmentComponent,
+    MobileDevelopmentUpperSectionComponent,
+    MobileDevelopmentBottomSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
 
