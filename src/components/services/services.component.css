@@ -1,0 +1,55 @@
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    align-items: center;
+}
+
+.main_title {
+    margin-top: 70px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152.875%; /* 61.15px */
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152.875%; /* 30.575px */
+    letter-spacing: 0.5px;
+}
+
+.banner {
+    max-width: 100%;
+    margin: 20px 0 10px 0 ;
+}
+
+.banner_title{
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+}
