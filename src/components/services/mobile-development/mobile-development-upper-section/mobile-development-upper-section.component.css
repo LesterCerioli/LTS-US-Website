@@ -45,6 +45,11 @@
   }
   
   @media (max-width: 768px){
+
+    .upper_section {
+      display: flex;
+      flex-direction: column;
+    }
     .upper_section > p{
       width: 100%;
       height: auto;
@@ -52,6 +57,6 @@
     }
   
     .upper_section .image_container{
-      display: none;
+      max-width: 60%;
     }
   }

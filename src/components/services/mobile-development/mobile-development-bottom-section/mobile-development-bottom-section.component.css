@@ -56,7 +56,7 @@
     }
   
     .bottom_section .image_container{
-      max-width: 60%;
+      display: none;
     }
   
     .key_features{
