@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from 'src/components/home/home.component';
-import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
+import { NavbarComponent } from 'src/components/nav-bar/nav-bar.component';
 import { AboutUsComponent } from '../components/about-us/about-us.component';
 import { BlogComponent } from 'src/components/blog/blog.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
@@ -28,7 +30,7 @@ import { MobileDevelopmentBottomSectionComponent } from 'src/components/services
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
+    NavbarComponent,
     AboutUsComponent,
     HomeComponent,
     BlogComponent,
@@ -51,9 +53,14 @@ import { MobileDevelopmentBottomSectionComponent } from 'src/components/services
     MobileDevelopmentUpperSectionComponent,
     MobileDevelopmentBottomSectionComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+
 
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(library: FaIconLibrary){
+    library.addIcons(faGithub, faLinkedin)
+  }
+}
