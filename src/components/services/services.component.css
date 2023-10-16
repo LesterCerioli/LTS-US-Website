@@ -12,15 +12,20 @@ section {
     align-items: center;
 }
 
+.title_container {
+    max-width: 72%;
+}
+
 .main_title {
     margin-top: 70px;
+    margin-bottom: 10px;
     color: #000;
     text-align: center;
     font-family: Poppins;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 152.875%; /* 61.15px */
+    line-height: 61px;
     letter-spacing: 1px;
 }
 
@@ -31,13 +36,13 @@ section {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 152.875%; /* 30.575px */
+    line-height: 30px;
     letter-spacing: 0.5px;
 }
 
 .banner {
     max-width: 100%;
-    margin: 20px 0 10px 0 ;
+    margin: 50px 0 10px 0 ;
 }
 
 .banner_title{
@@ -52,4 +57,23 @@ section {
 
 img {
     max-width: 100%;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .banner_title {
+        font-size: 25px;
+    }
+
+    .title_container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 599px) {
+    .banner_title {
+        font-size: 20px;
+    }
+    .title_container {
+        max-width: 90%;
+    }
 }
