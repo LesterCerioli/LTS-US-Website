@@ -17,6 +17,10 @@ import { UpperSectionComponent } from 'src/components/services/educational-servi
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { PostsComponent } from '../components/blog/posts/posts.component';
+import { BackendPostsComponent } from 'src/components/blog/posts/backend-posts/backend-posts.component';
+import { FrontendPostsComponent } from 'src/components/blog/posts/frontend-posts/frontend-posts.component';
+import { DevopsPostsComponent } from 'src/components/blog/posts/devops-posts/devops-posts.component';
+import { CloudsuitePostsComponent } from 'src/components/blog/posts/cloudsuite-posts/cloudsuite-posts.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +37,13 @@ import { PostsComponent } from '../components/blog/posts/posts.component';
     EducationalServicesComponent,
     BottomSectionComponent,
     UpperSectionComponent,
+    PostsComponent,
+    BackendPostsComponent,
+    FrontendPostsComponent,
+    DevopsPostsComponent,
+    CloudsuitePostsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, CarouselModule],
 
   providers: [],
   bootstrap: [AppComponent],
