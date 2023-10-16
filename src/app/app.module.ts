@@ -21,6 +21,7 @@ import { FoodServicesComponent } from 'src/components/services/food-services/foo
 import { TitleComponent } from 'src/components/services/food-services/title/title.component';
 import { SecondSectionComponent } from 'src/components/services/food-services/second-section/second-section.component';
 import { ThirdSectionComponent } from 'src/components/services/food-services/third-section/third-section.component';
+import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ThirdSectionComponent } from 'src/components/services/food-services/thi
     FoodServicesComponent,
     TitleComponent,
     SecondSectionComponent,
-    ThirdSectionComponent
+    ThirdSectionComponent,
+    RealStateServicesComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
 
