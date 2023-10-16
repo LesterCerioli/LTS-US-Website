@@ -9,6 +9,7 @@ import { BlogComponent } from 'src/components/blog/blog.component';
 import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
 import { TravelServicesComponent } from 'src/components/services/travel-services/travel-services.component';
 import { FoodServicesComponent } from 'src/components/services/food-services/food-services.component';
+import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'services/food-services',
     component: FoodServicesComponent,
+  },
+  {
+    path: 'services/mobile-development',
+    component: MobileDevelopmentComponent,
   },
   {
     path: 'portifolio',
