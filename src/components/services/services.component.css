@@ -76,4 +76,8 @@ img {
     .title_container {
         max-width: 90%;
     }
+
+    .subtitle {
+        text-align: justify;
+    }
 }
