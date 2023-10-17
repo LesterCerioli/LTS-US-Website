@@ -9,7 +9,7 @@ import { BlogComponent } from 'src/components/blog/blog.component';
 import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
 import { TravelServicesComponent } from 'src/components/services/travel-services/travel-services.component';
 import { FoodServicesComponent } from 'src/components/services/food-services/food-services.component';
-import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
+import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
 
 const routes: Routes = [
   {
@@ -38,8 +38,13 @@ const routes: Routes = [
     component: FoodServicesComponent,
   },
   {
+
+    path: 'services/real-state-services',
+    component: RealStateServicesComponent,
+
     path: 'services/mobile-development',
     component: MobileDevelopmentComponent,
+
   },
   {
     path: 'portifolio',
