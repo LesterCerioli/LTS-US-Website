@@ -14,13 +14,12 @@ import { ServicesComponent } from 'src/components/services/services.component';
 import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
 import { BottomSectionComponent } from 'src/components/services/educational-services/bottom-section/bottom-section.component';
 import { UpperSectionComponent } from 'src/components/services/educational-services/upper-section/upper-section.component';
-import { AboutUsSectionComponent } from './about-us-section/about-us-section.component';
-import { HomerBannerComponent } from './homer-banner/homer-banner.component';
-import { BlogSectionComponent } from './blog-section/blog-section.component';
-import { ServiceSectionComponent } from './service-section/service-section.component';
-import { PortifolioSectionComponent } from './portifolio-section/portifolio-section.component';
-import { ContactSectionComponent } from './contact-section/contact-section.component';
-import { BannerHomeComponent } from './banner-home/banner-home.component';
+import { AboutUsSectionComponent } from 'src/components/home/about-us-section/about-us-section.component';
+import { BlogSectionComponent } from 'src/components/home/blog-section/blog-section.component';
+import { ServiceSectionComponent } from 'src/components/home/service-section/service-section.component';
+import { PortifolioSectionComponent } from 'src/components/home/portifolio-section/portifolio-section.component';
+import { ContactSectionComponent } from 'src/components/home/contact-section/contact-section.component';
+import { BannerHomeComponent } from 'src/components/home/banner-home/banner-home.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,6 @@ import { BannerHomeComponent } from './banner-home/banner-home.component';
     BottomSectionComponent,
     UpperSectionComponent,
     AboutUsSectionComponent,
-    HomerBannerComponent,
     BlogSectionComponent,
     ServiceSectionComponent,
     PortifolioSectionComponent,
