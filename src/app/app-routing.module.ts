@@ -38,8 +38,13 @@ const routes: Routes = [
     component: FoodServicesComponent,
   },
   {
+
     path: 'services/real-state-services',
     component: RealStateServicesComponent,
+
+    path: 'services/mobile-development',
+    component: MobileDevelopmentComponent,
+
   },
   {
     path: 'portifolio',

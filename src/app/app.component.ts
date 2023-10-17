@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lucas Technology Services';
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
 }
