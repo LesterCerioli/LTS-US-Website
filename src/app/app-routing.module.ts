@@ -10,6 +10,7 @@ import { EducationalServicesComponent } from 'src/components/services/educationa
 import { TravelServicesComponent } from 'src/components/services/travel-services/travel-services.component';
 import { FoodServicesComponent } from 'src/components/services/food-services/food-services.component';
 import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
+import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
 
 const routes: Routes = [
   {
@@ -38,13 +39,12 @@ const routes: Routes = [
     component: FoodServicesComponent,
   },
   {
-
-    path: 'services/real-state-services',
+    path: 'services/real-estate-services',
     component: RealStateServicesComponent,
-
+  },
+  {
     path: 'services/mobile-development',
     component: MobileDevelopmentComponent,
-
   },
   {
     path: 'portifolio',
