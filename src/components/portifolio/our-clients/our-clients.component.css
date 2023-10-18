@@ -1,0 +1,38 @@
+.container {
+    margin-top: 90px;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    min-height: 500px;
+    background-color: var(--white);
+    
+    &:hover {
+      top: -5px;
+      box-shadow: 0 10px 10px #666;
+    }
+  }
+  
+  .title {
+    color: var(--blue);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    padding: 20px;
+  }
+  
+  .span-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .span {
+    display: block;
+    height: 2px;
+    width: 40px;
+    background-color: var(--blue);
+  }
+  

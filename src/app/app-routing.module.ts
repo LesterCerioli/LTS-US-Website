@@ -47,7 +47,7 @@ const routes: Routes = [
     component: MobileDevelopmentComponent,
   },
   {
-    path: 'portifolio',
+    path: 'portfolio',
     component: PortifolioComponent,
   },
   {
