@@ -4,38 +4,35 @@
   box-sizing: border-box;
 }
 
-
-section{
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: lightblue;
-   position: relative;
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  position: relative;
 }
-
 
 h1 {
   display: flex;
   font-weight: 900;
   font-size: 2.5rem;
-  color: #021F3E;
+  color: #021f3e;
   text-align: left;
-    margin: 70px auto 30px auto;
+  margin: 70px auto 30px auto;
 }
 
-.imageComputer{
+.imageComputer {
   position: absolute;
   top: -40%;
   right: 10%;
   max-width: 25%;
-
 }
 
 .text {
   position: relative;
   width: 100%;
-  background: linear-gradient(180deg, #4D64B5 0%, rgba(5, 37, 150, 0.96) 100%);
+  background: linear-gradient(180deg, #4d64b5 0%, rgba(5, 37, 150, 0.96) 100%);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -45,10 +42,7 @@ h1 {
   padding: 10px 15px;
 }
 
-
-
 .text p {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,99 +52,28 @@ h1 {
   color: white;
   text-wrap: wrap;
   font-size: 25px;
-
-
 }
 
-
-
-
-
-@media (max-width: 768px){
-
-   .imageComputer{
-    display: none;
-   }
-
-   h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-
-   }
-
-   .text{
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-   }
-
-   .text p{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-
-   }
-
-
-
-}
-
-
-@media (min-width: 768px){
-  .imageComputer{
-    position: absolute;
-    top: -35%;
-    right: 10%;
-    max-width: 30%;
-   }
-
-}
-
-@media (min-width: 990px){
-  .imageComputer{
-    position: absolute;
-    top: -40%;
-    right: 10%;
-    max-width: 25%;
-   }
-
-}
-
-
-
-
-h2{
-  color: #021F3E;
+h2 {
+  color: #021f3e;
   font-weight: 600;
   font-size: 1.5rem;
   margin: 30px 0;
   justify-content: center;
   text-align: center;
-
 }
 
-a.article{
+a.article {
   display: flex;
   justify-content: center;
-  color: #021F3E;
+  color: #021f3e;
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
   padding: 10px 20px;
-
 }
 
-
-
-
-
-.carousel-container{
+.carousel-container {
   position: relative;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -161,22 +84,19 @@ a.article{
   max-width: 700px;
 }
 
-.carousel-container img{
+.carousel-container img {
   display: none;
   border-radius: 15px;
-
-
 }
 
-.carousel-container img.image-active{
+.carousel-container img.image-active {
   display: block;
   width: 100%;
   height: 400px;
-
 }
 
 /*  dots/indicators */
-.carousel-dot-container{
+.carousel-dot-container {
   position: absolute;
   right: 0;
   left: 0;
@@ -187,7 +107,7 @@ a.article{
   margin-bottom: 1rem;
 }
 
-.dot{
+.dot {
   cursor: pointer;
   height: 13px;
   width: 13px;
@@ -200,26 +120,26 @@ a.article{
 }
 
 .active,
-.dot:hover{
+.dot:hover {
   opacity: 1;
 }
 
 /* image transition fade effect */
-.fade{
+.fade {
   animation-name: fade;
-  animation-duration: 5.0s;
+  animation-duration: 5s;
 }
 
 @keyframes fade {
-  from{
+  from {
     opacity: 0.5;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
 
-.btn-carousel{
+.btn-carousel {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -235,38 +155,80 @@ a.article{
   cursor: pointer;
 }
 
-.btn-prev{
+.btn-prev {
   left: 0;
 }
 
-
-.btn-next{
+.btn-next {
   right: 0;
 }
 
-
-.icon-carousel{
-  color:#fff;
-  opacity:0.5;
+.icon-carousel {
+  color: #fff;
+  opacity: 0.5;
   transition: all 0.15s ease;
 }
 
-.icon-carousel:hover{
-
+.icon-carousel:hover {
   opacity: 0.9;
 }
 
-.icon-carousel:active{
+.icon-carousel:active {
   opacity: 0.5;
 }
 
 .icon-next,
-.icon-prev{
+.icon-prev {
   font-size: 35px;
 }
 
-@media (max-width: 768px){
-  .carousel-container{
+@media (max-width: 768px) {
+  .carousel-container {
     max-width: 90%;
-   }
+  }
+
+  .imageComputer {
+    display: none;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .text {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .text p {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .imageComputer {
+    position: absolute;
+    top: -35%;
+    right: 10%;
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 990px) {
+  .imageComputer {
+    position: absolute;
+    top: -40%;
+    right: 10%;
+    max-width: 25%;
+  }
 }

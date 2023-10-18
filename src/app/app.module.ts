@@ -21,6 +21,7 @@ import { BackendPostsComponent } from 'src/components/blog/posts/backend-posts/b
 import { FrontendPostsComponent } from 'src/components/blog/posts/frontend-posts/frontend-posts.component';
 import { DevopsPostsComponent } from 'src/components/blog/posts/devops-posts/devops-posts.component';
 import { CloudsuitePostsComponent } from 'src/components/blog/posts/cloudsuite-posts/cloudsuite-posts.component';
+import { NavbarComponent } from 'src/components/blog/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { CloudsuitePostsComponent } from 'src/components/blog/posts/cloudsuite-p
     FrontendPostsComponent,
     DevopsPostsComponent,
     CloudsuitePostsComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CarouselModule],
 

@@ -54,24 +54,25 @@ const routes: Routes = [
   },
 
   {
-    path: 'blog/posts/backend-posts',
+    path: 'blog/posts/backend',
     component: BackendPostsComponent,
   },
 
   {
-    path: 'blog/posts/cloudsuite-posts',
+    path: 'blog/posts/cloudsuite',
     component: CloudsuitePostsComponent,
   },
 
   {
-    path: 'blog/posts/devops-posts',
+    path: 'blog/posts/devops',
     component: DevopsPostsComponent,
   },
 
   {
-    path: 'blog/posts/frontend-posts',
+    path: 'blog/posts/frontend',
     component: FrontendPostsComponent,
   },
+
 
 ];
 
