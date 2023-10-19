@@ -21,7 +21,7 @@ import { BackendPostsComponent } from 'src/components/blog/posts/backend-posts/b
 import { FrontendPostsComponent } from 'src/components/blog/posts/frontend-posts/frontend-posts.component';
 import { DevopsPostsComponent } from 'src/components/blog/posts/devops-posts/devops-posts.component';
 import { CloudsuitePostsComponent } from 'src/components/blog/posts/cloudsuite-posts/cloudsuite-posts.component';
-import { NavbarComponent } from 'src/components/blog/navbar/navbar.component';
+import { BlogNavbarComponent } from 'src/components/blog/navbar/blogNavbar.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import { NavbarComponent } from 'src/components/blog/navbar/navbar.component';
     FrontendPostsComponent,
     DevopsPostsComponent,
     CloudsuitePostsComponent,
-    NavbarComponent,
+    BlogNavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CarouselModule],
 

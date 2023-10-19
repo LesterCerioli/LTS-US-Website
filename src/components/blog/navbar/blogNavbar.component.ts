@@ -1,11 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-blognavbar',
+  templateUrl: './blognavbar.component.html',
+  styleUrls: ['./blognavbar.component.css']
 })
-export class NavbarComponent {
+export class BlogNavbarComponent {
   isMenuOpen: boolean = false;
   isMenuVisible: boolean = window.innerWidth < 769;
 
