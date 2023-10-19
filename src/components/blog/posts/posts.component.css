@@ -1,11 +1,10 @@
-*
-{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +12,7 @@ body{
   height: 100%;
 }
 
-.container{
+.container {
   width: 40rem;
   display: flex;
   align-items: center;
@@ -22,31 +21,28 @@ body{
   background-color: lightgray;
   margin-top: 70px;
   border-radius: 15px;
-
 }
 
-h1{
+h1 {
   margin: 20px;
-  color:#021F3E;
+  color: #021f3e;
   font-weight: bold;
   text-align: center;
 }
 
-.imagesPages{
+.imagesPages {
   margin: 10px;
   max-width: 100%;
 }
 
-
-@media (max-width: 600px){
-  .container{
+@media (max-width: 600px) {
+  .container {
     width: 90%;
     margin-top: 20px;
   }
 
-  .imagesPages{
-    width:90%;
+  .imagesPages {
+    width: 90%;
     max-width: 100%;
-
   }
 }
