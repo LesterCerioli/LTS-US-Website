@@ -29,6 +29,10 @@ import { MobileDevelopmentBottomSectionComponent } from 'src/components/services
 import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
 import { BottomSectionStateComponent } from 'src/components/services/real-state-services/bottom-section-state/bottom-section-state.component';
 import { UpperSectionStateComponent } from 'src/components/services/real-state-services/upper-section-state/upper-section-state.component';
+import { PortfolioFirstSectionComponent } from 'src/components/portifolio/portfolio-first-section/portfolio-first-section.component';
+import { OurClientsComponent } from '../components/portifolio/our-clients/our-clients.component'
+import { ClientsListComponent } from 'src/components/portifolio/clients-list/clients-list.component';
+import { OurGithubComponent } from 'src/components/portifolio/our-github/our-github.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,11 @@ import { UpperSectionStateComponent } from 'src/components/services/real-state-s
     MobileDevelopmentBottomSectionComponent,
     RealStateServicesComponent,
     BottomSectionStateComponent,
-    UpperSectionStateComponent
+    UpperSectionStateComponent,
+    PortfolioFirstSectionComponent,
+    OurClientsComponent,
+    ClientsListComponent,
+    OurGithubComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
 
