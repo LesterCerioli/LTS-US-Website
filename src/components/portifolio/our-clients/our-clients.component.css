@@ -6,20 +6,15 @@
     align-items: center;
     flex-shrink: 0;
     min-height: 500px;
-    background-color: var(--white);
-    
-    &:hover {
-      top: -5px;
-      box-shadow: 0 10px 10px #666;
-    }
+    background-color: white;
   }
   
   .title {
-    color: var(--blue);
+    color: rgb(2, 31, 62);
     text-align: center;
-    font-size: 36px;
+    font-size: 38px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 45px;
     padding: 20px;
   }
@@ -33,6 +28,6 @@
     display: block;
     height: 2px;
     width: 40px;
-    background-color: var(--blue);
+    background-color: rgb(2, 31, 62);
   }
   

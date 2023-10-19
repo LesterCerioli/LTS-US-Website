@@ -9,21 +9,16 @@
     flex-shrink: 0;
   }
   
-  .animated-container:hover {
-    top: -5px;
-    box-shadow: 0 10px 10px #666;
-  }
-  
   .title {
     margin-top: 70px;
     font-family: Roboto;
-    color: var(--blue);
+    color: rgb(2, 31, 62);
     display: inline-block;
     padding-bottom: 8px;
     text-align: center;
     font-size: 42px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 58.8px;
   }
   
@@ -36,7 +31,7 @@
     display: block;
     height: 2px;
     width: 40px;
-    background-color: var(--blue);
+    background-color: rgb(2, 31, 62);
   }
   
   .section {
