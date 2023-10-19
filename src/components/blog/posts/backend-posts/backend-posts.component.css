@@ -25,6 +25,7 @@ section{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin-top: 100px;
+  margin-bottom: 25px;
 }
 
 h1{

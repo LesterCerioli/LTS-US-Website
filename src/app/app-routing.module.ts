@@ -7,6 +7,10 @@ import { ContactComponent } from 'src/components/contact/contact.component';
 import { AboutUsComponent } from 'src/components/about-us/about-us.component';
 import { BlogComponent } from 'src/components/blog/blog.component';
 import { EducationalServicesComponent } from 'src/components/services/educational-services/educational-services.component';
+import { TravelServicesComponent } from 'src/components/services/travel-services/travel-services.component';
+import { FoodServicesComponent } from 'src/components/services/food-services/food-services.component';
+import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
+import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
 import { PostsComponent } from 'src/components/blog/posts/posts.component';
 import { BackendPostsComponent } from 'src/components/blog/posts/backend-posts/backend-posts.component';
 import { CloudsuitePostsComponent } from 'src/components/blog/posts/cloudsuite-posts/cloudsuite-posts.component';
@@ -31,7 +35,22 @@ const routes: Routes = [
     path: 'services/educational-services',
     component: EducationalServicesComponent,
   },
-
+  {
+    path: 'services/travel-services',
+    component: TravelServicesComponent,
+  },
+  {
+    path: 'services/food-services',
+    component: FoodServicesComponent,
+  },
+  {
+    path: 'services/real-estate-services',
+    component: RealStateServicesComponent,
+  },
+  {
+    path: 'services/mobile-development',
+    component: MobileDevelopmentComponent,
+  },
   {
     path: 'portifolio',
     component: PortifolioComponent,
