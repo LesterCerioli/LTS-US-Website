@@ -149,7 +149,19 @@
     max-width: 90%;
   }
 
+  .paragraph {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
   .key_features_container {
     max-width: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title_container {
+    width: 60%;
   }
 }
