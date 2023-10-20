@@ -1,0 +1,63 @@
+.animated-container {
+    animation: fadeIn 0.7s forwards;
+    display: flex;
+    height: 537px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+  }
+  
+  .title {
+    margin-top: 70px;
+    font-family: Roboto;
+    color: rgb(2, 31, 62);
+    display: inline-block;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.8px;
+  }
+  
+  .span-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .span {
+    display: block;
+    height: 2px;
+    width: 40px;
+    background-color: rgb(2, 31, 62);
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .subtitle {
+    color: #5E5E5E;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 250px;
+  }
+  
+  .image:hover {
+    top: -5px;
+    box-shadow: 0 10px 10px #666;
+  }
+  
