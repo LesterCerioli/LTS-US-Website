@@ -11,6 +11,7 @@ import { TravelServicesComponent } from 'src/components/services/travel-services
 import { FoodServicesComponent } from 'src/components/services/food-services/food-services.component';
 import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
 import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
+import { CrmErpServicesComponent } from 'src/components/services/crm-erp-services/crm-erp-services.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,10 @@ const routes: Routes = [
     path: 'blog',
     component: BlogComponent,
   },
+  {
+    path: 'services/erp-crm-services',
+    component: CrmErpServicesComponent,
+  }
 ];
 
 @NgModule({

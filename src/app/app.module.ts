@@ -33,6 +33,9 @@ import { PortfolioFirstSectionComponent } from 'src/components/portifolio/portfo
 import { OurClientsComponent } from '../components/portifolio/our-clients/our-clients.component'
 import { ClientsListComponent } from 'src/components/portifolio/clients-list/clients-list.component';
 import { OurGithubComponent } from 'src/components/portifolio/our-github/our-github.component';
+import { CrmErpServicesComponent } from '../components/services/crm-erp-services/crm-erp-services.component';
+import { CrmErpUpperSectionComponent } from '../components/services/crm-erp-services/crm-erp-upper-section/crm-erp-upper-section.component';
+import { CrmErpBottomSectionComponent } from '../components/services/crm-erp-services/crm-erp-bottom-section/crm-erp-bottom-section.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +68,10 @@ import { OurGithubComponent } from 'src/components/portifolio/our-github/our-git
     PortfolioFirstSectionComponent,
     OurClientsComponent,
     ClientsListComponent,
-    OurGithubComponent
+    OurGithubComponent,
+    CrmErpServicesComponent,
+    CrmErpUpperSectionComponent,
+    CrmErpBottomSectionComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
 
