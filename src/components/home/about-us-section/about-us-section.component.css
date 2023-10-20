@@ -1,0 +1,53 @@
+.container_title {
+    min-width: 67%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 15rem;
+}
+  
+.container_title h1 {
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.container_img {
+    margin: auto 15rem;
+    margin-bottom: 1rem;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    margin: auto 15rem;
+    margin-bottom: 2rem;
+    
+}
+
+.button_containner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1rem 0;
+    margin-right: 30rem;
+}
+  
+.button {
+    
+    padding: 1rem 2.5rem;
+    color: #5050EA;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+  
+.button:hover {
+    background-color: #5050EA;
+    color: #FFFFFF;
+}

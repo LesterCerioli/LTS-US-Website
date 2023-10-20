@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.container_title {
+    min-width: 67%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 15rem;
+}
+
+.container_title h1 {
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.container_title p {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.container_general {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container_card {
+    display: flex;
+    align-items: flex-start;
+    max-width: 70%;
+    
+    @media (max-width: 1023px) {
+       max-width: 100%;
+    }
+}
+
+.column_one {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.column_one img {
+    margin: 5px;
+    max-width: 100%;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.column_down {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px;
+
+    @media (max-width: 1023px) {
+    width: 100%;
+    padding: 0 10px 0 10px;
+    }
+}
+
+.column_down img {
+    margin: 5px;
+    max-width: 100%;
+    
+    @media (max-width: 1023px) {
+    margin: 0; 
+    }
+}
+
+.button_containner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1rem 0;
+    margin-right: 30rem;
+}
+  
+.button {
+    padding: 1rem 2.5rem;
+    color: #5050EA;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+  
+.button:hover {
+    background-color: #5050EA;
+    color: #FFFFFF;
+}
