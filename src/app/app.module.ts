@@ -36,6 +36,12 @@ import { OurGithubComponent } from 'src/components/portifolio/our-github/our-git
 import { CrmErpServicesComponent } from '../components/services/crm-erp-services/crm-erp-services.component';
 import { CrmErpUpperSectionComponent } from '../components/services/crm-erp-services/crm-erp-upper-section/crm-erp-upper-section.component';
 import { CrmErpBottomSectionComponent } from '../components/services/crm-erp-services/crm-erp-bottom-section/crm-erp-bottom-section.component';
+import { ServiceSectionComponent } from 'src/components/home/service-section/service-section.component';
+import { AboutUsSectionComponent } from 'src/components/home/about-us-section/about-us-section.component';
+import { BannerHomeComponent } from 'src/components/home/banner-home/banner-home.component';
+import { BlogSectionComponent } from 'src/components/home/blog-section/blog-section.component';
+import { ContactSectionComponent } from 'src/components/home/contact-section/contact-section.component';
+import { PortifolioSectionComponent } from 'src/components/home/portifolio-section/portifolio-section.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +49,12 @@ import { CrmErpBottomSectionComponent } from '../components/services/crm-erp-ser
     NavbarComponent,
     AboutUsComponent,
     HomeComponent,
+    AboutUsSectionComponent,
+    BannerHomeComponent,
+    BlogSectionComponent,
+    ContactSectionComponent,
+    PortifolioSectionComponent,
+    ServiceSectionComponent,
     BlogComponent,
     ContactComponent,
     FooterComponent,
