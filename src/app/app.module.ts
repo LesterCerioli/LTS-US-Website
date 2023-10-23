@@ -42,6 +42,10 @@ import { BannerHomeComponent } from 'src/components/home/banner-home/banner-home
 import { BlogSectionComponent } from 'src/components/home/blog-section/blog-section.component';
 import { ContactSectionComponent } from 'src/components/home/contact-section/contact-section.component';
 import { PortifolioSectionComponent } from 'src/components/home/portifolio-section/portifolio-section.component';
+import { BackendComponent } from 'src/components/blog/posts-component/backend/backend.component';
+import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
+import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
+import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +87,11 @@ import { PortifolioSectionComponent } from 'src/components/home/portifolio-secti
     OurGithubComponent,
     CrmErpServicesComponent,
     CrmErpUpperSectionComponent,
-    CrmErpBottomSectionComponent
+    CrmErpBottomSectionComponent,
+    BackendComponent,
+    CloudsuiteComponent,
+    DevopsComponent,
+    FrontendComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
 
