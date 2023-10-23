@@ -1,1 +1,100 @@
-<p>contact works!</p>
+<div class="container">
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+      <div class="title">
+        <h1>Fale conosco</h1>
+        <hr class="line" />
+      </div>
+      <div class="data">
+        <input
+        type="text"
+        name="name"
+        placeholder="Nome"
+        [(ngModel)]="formData['dataClient']['name']"
+        required
+        />
+
+        <p class="error" *ngIf="showRequiredErrors || contactForm.controls['name'].invalid">
+            {{ contactForm.controls['name'].errors?.['minlength'] ? 'Informe seu nome completo' : 'Campo obrigatório' }}
+          </p>
+          
+  
+        <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            [(ngModel)]="formData['dataClient']['email']"
+            required 
+            />
+
+            <p class="error" *ngIf="showRequiredErrors || contactForm.controls['email'].invalid">
+                {{ contactForm.controls['email'].errors?.['minlength'] ? 'Informe seu nome completo' : 'Campo obrigatório' }}
+              </p>
+  
+        <input
+            type="tel"
+            name="tel"
+            placeholder="Telefone"
+            [(ngModel)]="formData['dataClient']['tel']"
+            required
+        />
+
+        <p class="error" *ngIf="showRequiredErrors || contactForm.controls['tel'].invalid">
+            {{ contactForm.controls['tel'].errors?.['minlength'] ? 'Informe seu nome completo' : 'Campo obrigatório' }}
+          </p>
+  
+        <textarea rows="8" cols="70" placeholder="Mensagem"></textarea>
+      </div>
+      <div class="first-button">
+        <label>
+          <button type="submit" [class.sending]="isSending" [disabled]="isSending">
+            {{ isSending ? 'Enviando' : 'Enviar' }}
+          </button>
+        </label>
+      </div>
+    </form>
+  
+    <div class="google-privacy">
+      <a href="https://policies.google.com/privacy" class="privacidade">
+        Este site é protegido por reCAPTCHA. A Política de Privacidade e os Termos de Serviço do Google são aplicáveis.
+      </a>
+    </div>
+  
+    <div class="name">
+      <label>
+        <h4 class="name">Lucas Technologia Services</h4>
+      </label>
+    </div>
+  
+    <div class="address">
+      <label>
+        <p class="endereco">Av Vicente de Carvalho, 1086</p>
+      </label>
+    </div>
+  
+    <div class="email">
+      <label>
+        <a href="mailto:commercial2018@lucastechnologyservice.com">
+          commercial2018@lucastecnologyservice.com
+        </a>
+      </label>
+      <label>
+        <a href="tel:{{ phoneNumber }}" (click)="handlePhonePopup()">
+          +55 21 3042-5441
+        </a>
+      </label>
+    </div>
+  
+    <div class="whatsapp-button">
+      <div class="second-button">
+        <button class="mensagem" (click)="handleWhatsAppClick()">
+          <i class="fab fa-whatsapp"></i>
+          <p>Enviar mensagem</p>
+        </button>
+      </div>
+    </div>
+  
+    <div class="map">
+      map link
+    </div>
+  </div>
+  

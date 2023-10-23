@@ -42,6 +42,7 @@ import { BannerHomeComponent } from 'src/components/home/banner-home/banner-home
 import { BlogSectionComponent } from 'src/components/home/blog-section/blog-section.component';
 import { ContactSectionComponent } from 'src/components/home/contact-section/contact-section.component';
 import { PortifolioSectionComponent } from 'src/components/home/portifolio-section/portifolio-section.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { PortifolioSectionComponent } from 'src/components/home/portifolio-secti
     CrmErpUpperSectionComponent,
     CrmErpBottomSectionComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
+
 
   providers: [],
   bootstrap: [AppComponent],
