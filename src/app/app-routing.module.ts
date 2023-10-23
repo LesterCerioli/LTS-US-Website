@@ -12,6 +12,13 @@ import { FoodServicesComponent } from 'src/components/services/food-services/foo
 import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
 import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
 
+import { PostsComponent } from 'src/components/blog/posts/posts.component';
+import { BackendComponent } from 'src/components/blog/posts/backend/backend.component';
+import { FrontendComponent } from 'src/components/blog/posts/frontend/frontend.component';
+import { CloudsuiteComponent } from 'src/components/blog/posts/cloudsuite/cloudsuite.component';
+import { DevopsComponent } from 'src/components/blog/posts/devops/devops.component';
+
+
 const routes: Routes = [
   {
     path: '',
@@ -61,6 +68,26 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'blog/posts',
+    component: PostsComponent,
+  },
+  {
+    path: 'blog/posts/backend',
+    component: BackendComponent,
+  },
+  {
+    path: 'blog/posts/frontend',
+    component: FrontendComponent,
+  },
+  {
+    path: 'blog/posts/cloudsuite',
+    component: CloudsuiteComponent,
+  },
+  {
+    path: 'blog/posts/devops',
+    component: DevopsComponent,
   },
 ];
 

@@ -29,6 +29,12 @@ import { MobileDevelopmentBottomSectionComponent } from 'src/components/services
 import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
 import { BottomSectionStateComponent } from 'src/components/services/real-state-services/bottom-section-state/bottom-section-state.component';
 import { UpperSectionStateComponent } from 'src/components/services/real-state-services/upper-section-state/upper-section-state.component';
+import { PostsComponent } from 'src/components/blog/posts/posts.component';
+import { NavbarBlogComponent } from 'src/components/blog/posts/navbar-blog/navbar-blog.component';
+import { DevopsComponent } from 'src/components/blog/posts/devops/devops.component';
+import { FrontendComponent } from 'src/components/blog/posts/frontend/frontend.component';
+import { CloudsuiteComponent } from 'src/components/blog/posts/cloudsuite/cloudsuite.component';
+import { BackendComponent } from 'src/components/blog/posts/backend/backend.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +63,13 @@ import { UpperSectionStateComponent } from 'src/components/services/real-state-s
     MobileDevelopmentBottomSectionComponent,
     RealStateServicesComponent,
     BottomSectionStateComponent,
-    UpperSectionStateComponent
+    UpperSectionStateComponent,
+    PostsComponent,
+    NavbarBlogComponent,
+    DevopsComponent,
+    FrontendComponent,
+    CloudsuiteComponent,
+    BackendComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
 
