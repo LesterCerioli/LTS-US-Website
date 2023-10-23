@@ -18,6 +18,10 @@ import { BlogSectionComponent } from 'src/components/home/blog-section/blog-sect
 import { ContactSectionComponent } from 'src/components/home/contact-section/contact-section.component';
 import { PortfolioFirstSectionComponent } from 'src/components/portifolio/portfolio-first-section/portfolio-first-section.component';
 import { ServiceSectionComponent } from 'src/components/home/service-section/service-section.component';
+import { BackendComponent } from 'src/components/blog/posts-component/backend/backend.component';
+import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
+import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
+import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
 
 const routes: Routes = [
   {
@@ -92,6 +96,22 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'blog/posts/backend',
+    component: BackendComponent,
+  },
+  {
+    path: 'blog/posts/cloudsuite',
+    component: CloudsuiteComponent,
+  },
+  {
+    path: 'blog/posts/devops',
+    component: DevopsComponent,
+  },
+  {
+    path: 'blog/posts/frontend',
+    component: FrontendComponent,
   },
   {
     path: 'services/erp-crm-services',
