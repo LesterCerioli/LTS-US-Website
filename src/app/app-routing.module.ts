@@ -1,3 +1,4 @@
+import { BackendComponent } from './../components/blog/posts/backend/backend.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from 'src/components/home/home.component';
@@ -12,6 +13,10 @@ import { FoodServicesComponent } from 'src/components/services/food-services/foo
 import { RealStateServicesComponent } from 'src/components/services/real-state-services/real-state-services.component';
 import { MobileDevelopmentComponent } from 'src/components/services/mobile-development/mobile-development.component';
 import { CrmErpServicesComponent } from 'src/components/services/crm-erp-services/crm-erp-services.component';
+import { PostsComponent } from 'src/components/blog/posts/posts.component';
+import { FrontendComponent } from 'src/components/blog/posts/frontend/frontend.component';
+import { DevopsComponent } from 'src/components/blog/posts/devops/devops.component';
+import { CloudsuiteComponent } from 'src/components/blog/posts/cloudsuite/cloudsuite.component';
 
 const routes: Routes = [
   {
@@ -62,6 +67,26 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'blog/posts',
+    component: PostsComponent,
+  },
+  {
+    path: 'blog/posts/backend',
+    component: BackendComponent
+  },
+  {
+    path: 'blog/posts/frontend',
+    component: FrontendComponent,
+  },
+  {
+    path: 'blog/posts/devops',
+    component: DevopsComponent,
+  },
+  {
+    path: 'blog/posts/cloudsuite',
+    component: CloudsuiteComponent,
   },
   {
     path: 'services/erp-crm-services',

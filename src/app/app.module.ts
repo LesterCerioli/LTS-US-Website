@@ -36,6 +36,12 @@ import { OurGithubComponent } from 'src/components/portifolio/our-github/our-git
 import { CrmErpServicesComponent } from '../components/services/crm-erp-services/crm-erp-services.component';
 import { CrmErpUpperSectionComponent } from '../components/services/crm-erp-services/crm-erp-upper-section/crm-erp-upper-section.component';
 import { CrmErpBottomSectionComponent } from '../components/services/crm-erp-services/crm-erp-bottom-section/crm-erp-bottom-section.component';
+import { PostsComponent } from './posts/posts.component';
+import { BackendComponent } from './backend/backend.component';
+import { FrontendComponent } from './frontend/frontend.component';
+import { DevopsComponent } from './devops/devops.component';
+import { CloudsuiteComponent } from './cloudsuite/cloudsuite.component';
+import { NavbarBlogComponent } from './navbar-blog/navbar-blog.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +77,13 @@ import { CrmErpBottomSectionComponent } from '../components/services/crm-erp-ser
     OurGithubComponent,
     CrmErpServicesComponent,
     CrmErpUpperSectionComponent,
-    CrmErpBottomSectionComponent
+    CrmErpBottomSectionComponent,
+    PostsComponent,
+    BackendComponent,
+    FrontendComponent,
+    DevopsComponent,
+    CloudsuiteComponent,
+    NavbarBlogComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
 
