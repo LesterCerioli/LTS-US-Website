@@ -17,6 +17,10 @@ export class ContactComponent {
   showRequiredErrors: boolean = false;
   phoneNumber: string = '+552130425441';
 
+  isNameInvalid: boolean = false;
+  isEmailInvalid: boolean = false;
+  isTelInvalid: boolean = false;
+
   constructor() {}
 
   submitForm() {
@@ -33,11 +37,11 @@ export class ContactComponent {
   }
 
   isValidForm() {
-    return (
-      !!this.formData.dataClient.name &&
-      !!this.formData.dataClient.email &&
-      this.validatePhoneNumber(this.formData.dataClient.tel)
-    );
+    this.isNameInvalid = !this.formData.dataClient.name;
+    this.isEmailInvalid = !this.formData.dataClient.email;
+    this.isTelInvalid = !this.validatePhoneNumber(this.formData.dataClient.tel);
+
+    return !this.isNameInvalid && !this.isEmailInvalid && !this.isTelInvalid;
   }
 
   validatePhoneNumber(phoneNumber: string): boolean {
@@ -46,15 +50,15 @@ export class ContactComponent {
   }
 
   abrirModal() {
-    // Implement your modal logic here
+    // Upcoming modal logic
   }
 
   setModalIsOpen(isOpen: boolean) {
-    // Implement your modal logic here
+    // Upcoming modal logic here
   }
 
   handlePhonePopup() {
-    // Implement your phone popup logic here
+    // Upcoming phone popup logic here
   }
 
   handleWhatsAppClick() {

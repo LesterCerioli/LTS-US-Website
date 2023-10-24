@@ -1,5 +1,5 @@
 .container {
-    
+    margin: 0 80px 0 80px;
   }
   
   form {
@@ -106,7 +106,7 @@
     justify-content: center;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 0.69rem;
-    color: #595959;
+    
     margin-top: 40px;
     margin-bottom: 35px;
     text-decoration: none;
@@ -118,6 +118,11 @@
     .google-privacy {
       margin-top: 10px;
     }
+  }
+
+  .privacidade {
+    text-decoration: none;
+    color: #595959;
   }
   
   .whatsapp-button {
@@ -198,3 +203,6 @@
     color: green;
   }
   
+  .invalid-field {
+    border: 1px solid red;
+  }
