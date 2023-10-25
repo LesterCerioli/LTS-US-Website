@@ -75,8 +75,6 @@ export class ContactComponent {
     }
   }
 
-  
-
   isValidForm() {
     this.isNameInvalid = !this.formData.dataClient.name;
     this.isEmailInvalid = !this.formData.dataClient.email;
@@ -92,16 +90,8 @@ export class ContactComponent {
 
   abrirModalAgradecimento() {
     const dialogRef = this.dialog.open(ThankYouModalComponent, {
-      panelClass: 'modal-container' // Use a classe de estilo CSS do modal
+      panelClass: 'modal-container'
     });
-  }
-
-  setModalIsOpen(isOpen: boolean) {
-    // Upcoming modal logic here
-  }
-
-  handlePhonePopup() {
-    // Upcoming phone popup logic here
   }
 
   handleWhatsAppClick() {

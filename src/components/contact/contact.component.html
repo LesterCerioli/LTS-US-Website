@@ -1,97 +1,77 @@
 <div class="container">
-    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
-      <div class="title">
-        <h1>Contact us</h1>
-        <hr class="line" />
-      </div>
-      <div class="data">
-        <input
-          type="text"
-          name="name"
-          #nameInput
-          placeholder="Name"
-          [(ngModel)]="formData['dataClient']['name']"
-          [class.invalid-field]="isNameInvalid"
-          required
-        />
-
-        <p class="error" *ngIf="isNameInvalid">Required field</p>
-
-        <input
-            type="email"
-            name="email"
-            #emailInput
-            placeholder="Email"
-            [(ngModel)]="formData['dataClient']['email']"
-            [class.invalid-field]="isEmailInvalid"
-            required 
-            />
-  
-            <p class="error" *ngIf="isEmailInvalid">Required field</p>
-
-        <input
-            type="tel"
-            name="tel"
-            #telInput
-            placeholder="Telephone"
-            [(ngModel)]="formData['dataClient']['tel']"
-            [class.invalid-field]="isTelInvalid"
-            required
-        />
-        <p class="error" *ngIf="isTelInvalid">Required field</p>
-
-        <textarea rows="8" cols="70" placeholder="Message" #messageInput></textarea>
-      </div>
-      <div class="first-button">
-        <label>
-          <button type="submit" [class.sending]="isSending" [disabled]="isSending">
-            {{ isSending ? 'Sending' : 'Send' }}
-          </button>
-        </label>
-      </div>
-    </form>
-  
-    <div class="google-privacy">
-      <a href="https://policies.google.com/privacy" class="privacidade">
-        This site is protected by reCAPTCHA. Google's Privacy Policy and Terms of Service apply.
-      </a>
+  <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <div class="title">
+      <h1>Contact us</h1>
+      <hr class="line" />
     </div>
-  
-    <div class="name">
-      <label>
-        <h4 class="name">Lucas Technology Services</h4>
-      </label>
+    <div class="data">
+      <input type="text" name="name" #nameInput placeholder="Name" [(ngModel)]="formData['dataClient']['name']"
+        [class.invalid-field]="isNameInvalid" required />
+
+      <p class="error" *ngIf="isNameInvalid">Required field</p>
+
+      <input type="email" name="email" #emailInput placeholder="Email" [(ngModel)]="formData['dataClient']['email']"
+        [class.invalid-field]="isEmailInvalid" required />
+
+      <p class="error" *ngIf="isEmailInvalid">Required field</p>
+
+      <input type="tel" name="tel" #telInput placeholder="Telephone" [(ngModel)]="formData['dataClient']['tel']"
+        [class.invalid-field]="isTelInvalid" required />
+      <p class="error" *ngIf="isTelInvalid">Required field</p>
+
+      <textarea rows="8" cols="70" placeholder="Message" #messageInput></textarea>
     </div>
-  
-    <div class="address">
+    <div class="first-button">
       <label>
-        <p class="endereco">Av Vicente de Carvalho, 1086</p>
-      </label>
-    </div>
-  
-    <div class="email">
-      <label>
-        <a class="email_link" href="mailto:commercial2018@lucastechnologyservice.com">
-          commercial2018@lucastecnologyservice.com
-        </a>
-      </label>
-      <label>
-        <a href="tel:{{ phoneNumber }}" (click)="handlePhonePopup()">
-          +55 21 3042-5441
-        </a>
-      </label>
-    </div>
-  
-    <div class="whatsapp-button">
-      <div class="second-button">
-        <button class="mensagem" (click)="handleWhatsAppClick()">
-          <fa-icon [icon]="['fab', 'whatsapp']" class="whatsapp-icon"></fa-icon>
-          <p>Send message</p>
+        <button type="submit" [class.sending]="isSending" [disabled]="isSending">
+          {{ isSending ? 'Sending' : 'Send' }}
         </button>
-      </div>
+      </label>
     </div>
-    <div class="map">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.77542739735!2d-43.30778288874589!3d-22.847796635679824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997de64c30a44f%3A0x26d5ce698762e8e!2sAv.%20Vicente%20de%20Carvalho%2C%201086%20-%20Vila%20Kosmos%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021210-024!5e0!3m2!1spt-BR!2sbr!4v1692371577827!5m2!1spt-BR!2sbr" width="100%" height="450"></iframe>
+  </form>
+
+  <div class="google-privacy">
+    <a href="https://policies.google.com/privacy" class="privacidade">
+      This site is protected by reCAPTCHA. Google's Privacy Policy and Terms of Service apply.
+    </a>
+  </div>
+
+  <div class="name">
+    <label>
+      <h4 class="name">Lucas Technology Services</h4>
+    </label>
+  </div>
+
+  <div class="address">
+    <label>
+      <p class="endereco">Av Vicente de Carvalho, 1086</p>
+    </label>
+  </div>
+
+  <div class="email">
+    <label>
+      <a class="email_link" href="mailto:commercial2018@lucastechnologyservice.com">
+        commercial2018@lucastecnologyservice.com
+      </a>
+    </label>
+    <label>
+      <a href="tel:{{ phoneNumber }}">
+        +55 21 3042-5441
+      </a>
+    </label>
+  </div>
+
+  <div class="whatsapp-button">
+    <div class="second-button">
+      <button class="mensagem" (click)="handleWhatsAppClick()">
+        <fa-icon [icon]="['fab', 'whatsapp']" class="whatsapp-icon"></fa-icon>
+        <p>Send message</p>
+      </button>
     </div>
   </div>
-  
+  <div class="map">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.77542739735!2d-43.30778288874589!3d-22.847796635679824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997de64c30a44f%3A0x26d5ce698762e8e!2sAv.%20Vicente%20de%20Carvalho%2C%201086%20-%20Vila%20Kosmos%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021210-024!5e0!3m2!1spt-BR!2sbr!4v1692371577827!5m2!1spt-BR!2sbr"
+      width="100%" height="450"></iframe>
+  </div>
+</div>

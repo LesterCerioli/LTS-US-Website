@@ -42,10 +42,14 @@ import { BannerHomeComponent } from 'src/components/home/banner-home/banner-home
 import { BlogSectionComponent } from 'src/components/home/blog-section/blog-section.component';
 import { ContactSectionComponent } from 'src/components/home/contact-section/contact-section.component';
 import { PortifolioSectionComponent } from 'src/components/home/portifolio-section/portifolio-section.component';
+import { BackendComponent } from 'src/components/blog/posts-component/backend/backend.component';
+import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
+import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
+import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ThankYouModalComponent } from 'src/components/contact/thank-you-modal/thank-you-modal.component';
-import { faClose } from '@fortawesome/free-solid-svg-icons';
+
 
 @NgModule({
   declarations: [
@@ -88,6 +92,10 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
     CrmErpServicesComponent,
     CrmErpUpperSectionComponent,
     CrmErpBottomSectionComponent,
+    BackendComponent,
+    CloudsuiteComponent,
+    DevopsComponent,
+    FrontendComponent,
     ThankYouModalComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule, MatDialogModule],
