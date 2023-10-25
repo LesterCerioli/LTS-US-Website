@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from 'src/components/home/home.component';
@@ -43,6 +43,9 @@ import { BlogSectionComponent } from 'src/components/home/blog-section/blog-sect
 import { ContactSectionComponent } from 'src/components/home/contact-section/contact-section.component';
 import { PortifolioSectionComponent } from 'src/components/home/portifolio-section/portifolio-section.component';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ThankYouModalComponent } from 'src/components/contact/thank-you-modal/thank-you-modal.component';
+import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -84,9 +87,10 @@ import { FormsModule } from '@angular/forms';
     OurGithubComponent,
     CrmErpServicesComponent,
     CrmErpUpperSectionComponent,
-    CrmErpBottomSectionComponent
+    CrmErpBottomSectionComponent,
+    ThankYouModalComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule, MatDialogModule],
 
 
   providers: [],
@@ -95,6 +99,6 @@ import { FormsModule } from '@angular/forms';
 
 export class AppModule {
   constructor(library: FaIconLibrary){
-    library.addIcons(faGithub, faLinkedin)
+    library.addIcons(faGithub, faLinkedin, faWhatsapp)
   }
 }

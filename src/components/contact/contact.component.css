@@ -1,6 +1,12 @@
 .container {
     margin: 0 80px 0 80px;
   }
+
+  @media (max-width: 550px) {
+    .container {
+      margin: 0 20px 0 20px;
+    }
+  }
   
   form {
     font-family: Montserrat, Arial, sans-serif;
@@ -12,10 +18,6 @@
     margin: 0 auto;
     max-width: 98%;
     background-color: inherit;
-
-    @media (max-width: 700px) {
-        margin: 20px;
-      }
   }
   
   .title {
@@ -31,7 +33,7 @@
     color: #021F3E;
     margin-top: 30px;
     text-align: center;
-    margin: 80px;
+    margin-top: 80px;
   }
   
   .line {
@@ -145,7 +147,7 @@
     font-size: 0.94rem;
     outline: none;
     cursor: pointer;
-    padding: 0 15px;
+    padding: 0 25px;
     margin: 30px;
   }
   
@@ -181,7 +183,13 @@
   .email a:hover {
     text-decoration: underline;
   }
-  
+
+  @media (max-width: 386px) {
+  .email_link{
+    font-size: 14px;
+  }
+}
+
   .map {
     margin-top: 2.5em;
     display: flex;
