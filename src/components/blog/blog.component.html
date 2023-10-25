@@ -1,1 +1,73 @@
-<p>blog works!</p>
+<app-navbar-blog></app-navbar-blog>
+
+<body>
+
+
+  <section>
+    <div class="container">
+      <div>
+        <h1>Welcome!</h1>
+      </div>
+      <div class="text">
+        <span class="image"
+          ><img
+            class="imageComputer"
+            src="../../assets/imagesBlog/computer.svg"
+            alt="Computer image"
+        /></span>
+
+        <p>
+          Come aboard as we delve into the core of information technology,
+          forging paths to success in building resilient infrastructures and
+          dependable applications. We're thrilled to share our expertise and
+          assist you in making your mark in the realms of Front End, DevOps,
+          Cloud and Backend development.
+        </p>
+      </div>
+      <div>
+        <h2>Check out our articles!</h2>
+      </div>
+      <div>
+        <a routerLink="/blog/posts" class="article">See articles</a>
+      </div>
+
+      <div *ngIf="images && images.length > 0" class="carousel-container">
+        <img
+          routerLink="/blog/posts"
+          *ngFor="let image of images; let i = index"
+          [src]="image.imageSrc"
+          [alt]="image.imageAlt"
+          [ngClass]="{ 'image-active': selectedIndex === i }"
+          class="fade"
+          loading="lazy"
+        />
+
+        <div *ngIf="indicators" class="carousel-dot-container">
+          <span
+            *ngFor="let dot of images; let i = index"
+            class="dot"
+            [ngClass]="{ active: selectedIndex === i }"
+            (click)="selectImage(i)"
+          >
+          </span>
+        </div>
+
+        <button
+          *ngIf="controls"
+          class="btn-carousel btn-prev"
+          (click)="onPrevClick()"
+        >
+          <i class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+        </button>
+
+        <button
+          *ngIf="controls"
+          class="btn-carousel btn-next"
+          (click)="onNextClick()"
+        >
+          <i class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+</body>

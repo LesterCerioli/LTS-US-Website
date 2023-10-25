@@ -22,6 +22,7 @@ import { BackendComponent } from 'src/components/blog/posts-component/backend/ba
 import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
 import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
 import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
+import { PostsComponentComponent } from 'src/components/blog/posts-component/posts-component.component';
 
 const routes: Routes = [
   {
@@ -96,6 +97,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'blog/posts',
+    component: PostsComponentComponent,
   },
   {
     path: 'blog/posts/backend',

@@ -46,6 +46,8 @@ import { BackendComponent } from 'src/components/blog/posts-component/backend/ba
 import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
 import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
 import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
+import { NavbarBlogComponent } from '../components/blog/posts-component/navbar-blog/navbar-blog.component';
+import { PostsComponentComponent } from 'src/components/blog/posts-component/posts-component.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +93,9 @@ import { FrontendComponent } from 'src/components/blog/posts-component/frontend/
     BackendComponent,
     CloudsuiteComponent,
     DevopsComponent,
-    FrontendComponent
+    FrontendComponent,
+    NavbarBlogComponent,
+    PostsComponentComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
 
