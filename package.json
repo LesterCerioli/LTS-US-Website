@@ -11,6 +11,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.0",
+    "@angular/cdk": "^16.2.10",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
     "@angular/core": "^16.2.0",
@@ -24,13 +25,10 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@types/bootstrap": "^5.2.8",
-    "@types/jquery": "^3.5.25",
-    "bootstrap": "^5.3.2",
+    "@material/dialog": "^14.0.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
+    "tslib": "^2.6.2",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

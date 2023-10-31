@@ -46,10 +46,15 @@ import { BackendComponent } from 'src/components/blog/posts-component/backend/ba
 import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
 import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
 import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
+import { WebDevelopmentServicesComponent } from '../components/services/web-development-services/web-development-services.component';
+import { NavbarBlogComponent } from 'src/components/blog/posts-component/navbar-blog/navbar-blog.component';
+import { PostsComponentComponent } from 'src/components/blog/posts-component/posts-component.component';
+import { ThankYouModalComponent } from 'src/components/contact/thank-you-modal/thank-you-modal.component';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ThankYouModalComponent } from 'src/components/contact/thank-you-modal/thank-you-modal.component';
-
+import { UiUxComponentComponent } from 'src/components/services/ui-ux-component/ui-ux-component.component';
+import { UiUxBottomSectionComponent } from '../components/services/ui-ux-component/ui-ux-bottom-section/ui-ux-bottom-section.component';
+import { UiUxUpperSectionComponent } from '../components/services/ui-ux-component/ui-ux-upper-section/ui-ux-upper-section.component';
 
 @NgModule({
   declarations: [
@@ -96,10 +101,15 @@ import { ThankYouModalComponent } from 'src/components/contact/thank-you-modal/t
     CloudsuiteComponent,
     DevopsComponent,
     FrontendComponent,
-    ThankYouModalComponent
+    WebDevelopmentServicesComponent,
+    NavbarBlogComponent,
+    PostsComponentComponent,
+    ThankYouModalComponent,
+    UiUxComponentComponent,
+    UiUxBottomSectionComponent,
+    UiUxUpperSectionComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule, MatDialogModule],
-
 
   providers: [],
   bootstrap: [AppComponent],
