@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  max-width: 90%;
+  margin-top: 70px;
+  padding: 20px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #021f3e;
+  font-weight: bold;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+}

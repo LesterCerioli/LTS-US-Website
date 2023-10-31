@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from 'src/components/home/home.component';
@@ -46,6 +46,15 @@ import { BackendComponent } from 'src/components/blog/posts-component/backend/ba
 import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
 import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
 import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
+import { WebDevelopmentServicesComponent } from '../components/services/web-development-services/web-development-services.component';
+import { NavbarBlogComponent } from 'src/components/blog/posts-component/navbar-blog/navbar-blog.component';
+import { PostsComponentComponent } from 'src/components/blog/posts-component/posts-component.component';
+import { ThankYouModalComponent } from 'src/components/contact/thank-you-modal/thank-you-modal.component';
+import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { UiUxComponentComponent } from 'src/components/services/ui-ux-component/ui-ux-component.component';
+import { UiUxBottomSectionComponent } from '../components/services/ui-ux-component/ui-ux-bottom-section/ui-ux-bottom-section.component';
+import { UiUxUpperSectionComponent } from '../components/services/ui-ux-component/ui-ux-upper-section/ui-ux-upper-section.component';
 
 @NgModule({
   declarations: [
@@ -91,9 +100,16 @@ import { FrontendComponent } from 'src/components/blog/posts-component/frontend/
     BackendComponent,
     CloudsuiteComponent,
     DevopsComponent,
-    FrontendComponent
+    FrontendComponent,
+    WebDevelopmentServicesComponent,
+    NavbarBlogComponent,
+    PostsComponentComponent,
+    ThankYouModalComponent,
+    UiUxComponentComponent,
+    UiUxBottomSectionComponent,
+    UiUxUpperSectionComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule, MatDialogModule],
 
   providers: [],
   bootstrap: [AppComponent],
@@ -101,6 +117,6 @@ import { FrontendComponent } from 'src/components/blog/posts-component/frontend/
 
 export class AppModule {
   constructor(library: FaIconLibrary){
-    library.addIcons(faGithub, faLinkedin)
+    library.addIcons(faGithub, faLinkedin, faWhatsapp)
   }
 }

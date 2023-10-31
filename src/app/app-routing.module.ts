@@ -22,6 +22,9 @@ import { BackendComponent } from 'src/components/blog/posts-component/backend/ba
 import { CloudsuiteComponent } from 'src/components/blog/posts-component/cloudsuite/cloudsuite.component';
 import { DevopsComponent } from 'src/components/blog/posts-component/devops/devops.component';
 import { FrontendComponent } from 'src/components/blog/posts-component/frontend/frontend.component';
+import { WebDevelopmentServicesComponent } from 'src/components/services/web-development-services/web-development-services.component';
+import { PostsComponentComponent } from 'src/components/blog/posts-component/posts-component.component';
+import { UiUxComponentComponent } from 'src/components/services/ui-ux-component/ui-ux-component.component';
 
 const routes: Routes = [
   {
@@ -82,7 +85,11 @@ const routes: Routes = [
     component: MobileDevelopmentComponent,
   },
   {
-    path: 'portfolio',
+    path: 'services/ui-ux-component',
+    component: UiUxComponentComponent
+  },
+  {
+    path: 'portifolio',
     component: PortifolioComponent,
   },
   {
@@ -98,12 +105,16 @@ const routes: Routes = [
     component: BlogComponent,
   },
   {
+    path: 'blog/posts',
+    component: PostsComponentComponent,
+  },
+  {
     path: 'blog/posts/backend',
     component: BackendComponent,
   },
   {
     path: 'blog/posts/cloudsuite',
-    component: CloudsuiteComponent,
+    component: CloudsuiteComponent
   },
   {
     path: 'blog/posts/devops',
@@ -116,6 +127,10 @@ const routes: Routes = [
   {
     path: 'services/erp-crm-services',
     component: CrmErpServicesComponent,
+  },
+  {
+    path: 'services/web-development-services',
+    component: WebDevelopmentServicesComponent,
   }
 ];
 
