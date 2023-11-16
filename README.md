@@ -1,27 +1,15 @@
-# Ltswebsite
+[Lucas Technology Service](https://www.lucastechnologyservice.com)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
-## Development server
+![image](https://github.com/LesterCerioli/LTS-US-Website/assets/13305576/b97ad24d-7f56-4f85-a59a-a6f019b0d587)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://github.com/LesterCerioli/LTS-US-Website/assets/13305576/5f2b81f5-3b7c-4fbc-a0de-0b756792f26e)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://github.com/LesterCerioli/LTS-US-Website/assets/13305576/ca6f3bbc-24ab-4ea7-bb1c-27342f054fbf)
 
-## Running unit tests
+![image](https://github.com/LesterCerioli/LTS-US-Website/assets/13305576/579ba4af-0f96-41a2-b97b-e19f9502a60e)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://github.com/LesterCerioli/LTS-US-Website/assets/13305576/cd2a8591-7fd8-4220-946a-3e1ba9224dcf)
