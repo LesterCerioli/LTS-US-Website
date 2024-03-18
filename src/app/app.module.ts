@@ -55,6 +55,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { UiUxComponentComponent } from 'src/components/services/ui-ux-component/ui-ux-component.component';
 import { UiUxBottomSectionComponent } from '../components/services/ui-ux-component/ui-ux-bottom-section/ui-ux-bottom-section.component';
 import { UiUxUpperSectionComponent } from '../components/services/ui-ux-component/ui-ux-upper-section/ui-ux-upper-section.component';
+import { SliderComponent } from './components/shared/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -107,7 +108,8 @@ import { UiUxUpperSectionComponent } from '../components/services/ui-ux-componen
     ThankYouModalComponent,
     UiUxComponentComponent,
     UiUxBottomSectionComponent,
-    UiUxUpperSectionComponent
+    UiUxUpperSectionComponent,
+    SliderComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule, MatDialogModule],
 

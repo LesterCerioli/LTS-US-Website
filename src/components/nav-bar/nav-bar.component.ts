@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { Subject } from 'rxjs';
+import { IdleUserService } from 'src/services/idle-user-service/idle-user.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +11,15 @@ export class NavbarComponent {
   isMenuOpen: boolean = false;
   isMenuVisible: boolean = window.innerWidth < 769;
 
+
+  constructor(private data: IdleUserService){ }
+
+  ngOnInit(){
+    this.data.currentMessage.subscribe(isMenuOpen => this.isMenuOpen = isMenuOpen);
+  }
+
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+    this.data.toggleMenu(!this.isMenuOpen);
   }
 
   @HostListener('window:resize', ['$event'])

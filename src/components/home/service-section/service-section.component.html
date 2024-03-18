@@ -1,32 +1,12 @@
-<section>
+<section class="container">
     <div class="container_title">
         <div class="title">
             <h1>Services</h1>
         </div>
     </div>
-        <div class="card_container_tp">
-            <section class="card">
-                <img src="../../../assets/images/homePage/one.svg" alt="">
-            </section>
-            <section class="card">
-                <img src="../../../assets/images/homePage/two.svg">
-            </section>
-            <section class="card">
-                <img src="../../../assets/images/homePage/tre.svg">
-            </section>
-            </div>
-            <div class="card_container_tp">
-                <section class="card">
-                    <img src="../../../assets/images/homePage/four.svg" alt="">
-                </section>
-                <section class="card">
-                    <img src="../../../assets/images/homePage/five.svg">
-                </section>
-                <section class="card">
-                    <img src="../../../assets/images/homePage/six.svg">
-                </section>
-                </div>
-            
+
+    <app-slider [images]="images"></app-slider>
+
     <section class="button_containner">
         <a routerLink="/services" class="button">About</a>
     </section>
