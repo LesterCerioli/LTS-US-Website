@@ -1,11 +1,15 @@
 'use client';
 import React from 'react';
 import * as S from "./styles";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function DevelopmentWeb() {
   return (
     <S.Container >
 
+       <SpeedInsights />
+       <Analytics />
        <S.Mission>
          <S.Title>
           Web Development

@@ -5,10 +5,14 @@ import * as S from "./styles";
 import Posts from "../postsPage/Posts";
 
 import BlogPostContainer from "../blogPostContainer/blogPostContainer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function Hero() {
   return (
     <S.heroContainer>
+      <SpeedInsights />
+      <Analytics />
       <div>
         <h1>Welcome!</h1>
 

@@ -4,6 +4,8 @@ import * as S from "./styles";
 import Image from "next/image";
 
 import { postCategoryImages } from "@/components/blog/helper/postCategotyImages";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // vamos pegar o array the imagens e links, iterar e ramdomizar:
 // let's iterate and randomize the images / links array
@@ -24,6 +26,8 @@ function Posts() {
 
   return (
     <S.Posts>
+      <SpeedInsights />
+      <Analytics />
       <div>
         <h1>Check our posts!</h1>
         <S.ImagesContainer>

@@ -1,11 +1,14 @@
 'use client';
 import React from 'react';
 import * as S from "./styles";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function FoodAppDev() {
   return (
     <S.Container >
-
+       <SpeedInsights />
+       <Analytics />
        <S.Mission>
          <S.Title>
          Your Restaurant. Your APP

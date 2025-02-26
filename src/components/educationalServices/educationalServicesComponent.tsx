@@ -1,5 +1,7 @@
 import React from "react";
 import * as S from "./styles";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 interface EducationalServicesProps {
     title: string;
@@ -13,6 +15,8 @@ interface EducationalServicesProps {
 export function EducationalServicesComponent(props: EducationalServicesProps) {
     return (
         <S.Container>
+            <SpeedInsights />
+            <Analytics />
             <S.TitleContainer>
                 <S.Title>{props.title}</S.Title>
                 <S.Subtitle>{props.subtitle}</S.Subtitle>
@@ -22,6 +26,8 @@ export function EducationalServicesComponent(props: EducationalServicesProps) {
             </S.ImageContainer>
             <S.CardsContainer>
                 <S.CardsSubcontainer>
+                    <SpeedInsights />
+                    <Analytics />
                     <S.Card>
                         <S.CardText>{props.card1Text}</S.CardText>
                     </S.Card>   

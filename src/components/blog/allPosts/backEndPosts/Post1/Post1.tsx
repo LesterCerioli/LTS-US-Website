@@ -2,10 +2,14 @@ import React from "react";
 import * as S from "./styles";
 import Image from "next/image";
 import img from "@/assets/imagesBlog/blog__kotlin_vs_java.svg";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function Post1() {
   return (
     <S.PostStylesMainContainer>
+      <SpeedInsights />
+      <Analytics />
       <div>
         <S.TextContainer>
           <div>
