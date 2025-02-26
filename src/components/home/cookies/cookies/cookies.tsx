@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import * as S from "./styles";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export function Cookies() {
   const [closeModal, setCloseModal] = useState(false);
@@ -8,6 +10,8 @@ export function Cookies() {
   if (!closeModal) {
     return (
       <S.Container>
+        <Analytics />
+        <SpeedInsights />
         <div>
           <h3> This website uses cookies. </h3>
           <p>

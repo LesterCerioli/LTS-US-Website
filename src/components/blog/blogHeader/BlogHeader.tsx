@@ -1,8 +1,10 @@
 "use client";
+import { Analytics } from "@vercel/analytics/react";
 import * as S from "./styles";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { CgClose } from "react-icons/cg";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export function BlogHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +15,8 @@ export function BlogHeader() {
 
   return (
     <S.Container>
+      <SpeedInsights />
+      <Analytics />
       <S.NavBar className="fixed">
         <S.HamburgerMenu onClick={toggleMenu}>
           <div className={`bar ${isMenuOpen ? "open" : ""}`}></div>

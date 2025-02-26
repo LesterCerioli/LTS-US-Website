@@ -1,5 +1,7 @@
 import React from "react";
 import * as S from "./styles";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 interface CRM_ERPServices {
     title: string;
@@ -14,6 +16,8 @@ interface CRM_ERPServices {
 export function CRMServices(props: CRM_ERPServices) {
     return (
         <S.Container>
+            <SpeedInsights />
+            <Analytics />
             <S.TitleContainer>
                 <S.Title>{props.title}</S.Title>
             </S.TitleContainer>

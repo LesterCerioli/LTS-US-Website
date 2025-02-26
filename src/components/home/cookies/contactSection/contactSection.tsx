@@ -1,11 +1,15 @@
 "use client"
+import { Analytics } from "@vercel/analytics/react";
 import * as S from "./styles";
 import React from "react"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
   export function ContactSection() {
 
     return (
         <S.Container>
+            <Analytics />
+            <SpeedInsights />
             <S.TitleContainer>
                 <S.Title>Contact</S.Title>
             </S.TitleContainer>

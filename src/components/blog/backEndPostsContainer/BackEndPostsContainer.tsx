@@ -4,6 +4,7 @@ import * as S from './styles'
 
 function BackEndPostsContainer() {
   return (
+    
     <div>
       <S.PostStyles>
         <Post1 />

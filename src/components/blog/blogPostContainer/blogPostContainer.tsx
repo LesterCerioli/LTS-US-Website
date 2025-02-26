@@ -9,16 +9,22 @@ import carouselImage1 from '@/assets/imagesBlog/backendCard.png'
 import carouselImage2 from '@/assets/imagesBlog/cloudSuiteCard.png'
 import carouselImage3 from '@/assets/imagesBlog/frontEndCard.png'
 import carouselImage4 from '@/assets/imagesBlog/devOpsCard.png'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 class BlogPostContainer extends Component {
   render() {
     return (
       <S.BlogPostsContainer>
+          <SpeedInsights />
+          <Analytics />
           <h1> Check out our articles! </h1>
           <Link href="/blog/posts">
             <h3>See Articles</h3>
           </Link>
           <S.CarouselStyles>
+            <SpeedInsights />
+            <Analytics />
             <Link href="/blog/posts">
                 <Carousel
                   interval={1500}
